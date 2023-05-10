@@ -2,3 +2,41 @@
 -------------------------------
 16.4.2023, 18:27:11 	 Route /favicon.ico not exist
 -------------------------------
+10/05/2023, 18:56:33 	 Route /api/developergroups not exist
+-------------------------------
+10/05/2023, 18:56:39 	 Route /api/developergroup not exist
+-------------------------------
+10/05/2023, 18:56:51 	 Route /api/developerGroup not exist
+-------------------------------
+10/05/2023, 18:57:03 	 Route /api/developerGroup not exist
+-------------------------------
+10/05/2023, 18:58:00 	 Route /api/developer-group not exist
+-------------------------------
+10/05/2023, 19:00:10 	 Route /api/developer-group/ not exist
+-------------------------------
+10/05/2023, 19:01:11 	 Route /api/developer-group not exist
+-------------------------------
+10/05/2023, 19:05:15 	 Route / not exist
+-------------------------------
+10/05/2023, 19:05:35 	 Route /devgroups not exist
+-------------------------------
+10/05/2023, 19:05:52 	 Route /api/target-audience not exist
+-------------------------------
+10/05/2023, 19:06:04 	 Route /api/devgroup not exist
+-------------------------------
+10/05/2023, 19:06:53 	 Route / not exist
+-------------------------------
+10/05/2023, 19:06:53 	 Route /favicon.ico not exist
+-------------------------------
+10/05/2023, 19:07:04 	 Route /api/devgroups not exist
+-------------------------------
+10/05/2023, 19:09:45 	 Route /api/devgroup not exist
+-------------------------------
+10/05/2023, 19:09:46 	 Route /api/devgroup not exist
+-------------------------------
+10/05/2023, 19:13:20 	 Route /api/developmentgroups not exist
+-------------------------------
+10/05/2023, 19:13:30 	 Route /api/developmentgroups not exist
+-------------------------------
+10/05/2023, 19:16:10 	 Route /api/developergroups not exist
+-------------------------------
