@@ -3,7 +3,7 @@ import "./Header.css";
 function Header(): JSX.Element {
     return (
         <div className="Header">
-						<h2>Header....</h2>
+						<h2>Meeting Scheduler</h2>
 
         </div>
     );
