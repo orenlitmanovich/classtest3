@@ -15,6 +15,17 @@ router.get("/developergroups", async (request: Request, response: Response, next
     }
 });
 
+router.get("/meetings-per-developergroup/:devGroupId", async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const developergroup=+request.params.devGroupId
+        const meeting = await logic.getMeetingsByDeveloperGroup(developergroup)
+        response.json(meeting)
+    }
+    catch (err: any) {
+        next(err);
+    }
+});
+
 
 
 export default router;

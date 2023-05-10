@@ -11,6 +11,19 @@ async function getAllDeveloperGroup():Promise<DeveloperGroupModel[]>{
 }
 
 
+async function getMeetingsByDeveloperGroup(devGroupId:number): Promise<MeetingModel[]>{
+    const sql=`
+        SELECT M.*, D.devGroupName
+            FROM meetings AS M JOIN developmentGroups AS D
+            ON M.devGroupId=D.devGroupId
+            WHERE M.devGroupId=${devGroupId} `
+        
+        const gifts = await dal.execute(sql)
+
+        return gifts
+}
+
 export default {
-    getAllDeveloperGroup
+    getAllDeveloperGroup,
+    getMeetingsByDeveloperGroup
 }

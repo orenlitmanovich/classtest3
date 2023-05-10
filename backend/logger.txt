@@ -40,3 +40,5 @@
 -------------------------------
 10/05/2023, 19:16:10 	 Route /api/developergroups not exist
 -------------------------------
+10/05/2023, 19:32:07 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+-------------------------------
