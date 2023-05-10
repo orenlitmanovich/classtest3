@@ -42,3 +42,7 @@
 -------------------------------
 10/05/2023, 19:32:07 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
 -------------------------------
+10/05/2023, 19:44:25 	 ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`schedule`.`meetings`, CONSTRAINT `meetings_ibfk_1` FOREIGN KEY (`devGroupId`) REFERENCES `developmentgroups` (`devGroupId`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+-------------------------------
+10/05/2023, 19:51:33 	 Unexpected token } in JSON at position 222
+-------------------------------

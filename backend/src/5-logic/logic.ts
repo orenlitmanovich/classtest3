@@ -18,12 +18,30 @@ async function getMeetingsByDeveloperGroup(devGroupId:number): Promise<MeetingMo
             ON M.devGroupId=D.devGroupId
             WHERE M.devGroupId=${devGroupId} `
         
-        const gifts = await dal.execute(sql)
+        const meetings = await dal.execute(sql)
 
-        return gifts
+        return meetings
 }
+
+async function addMeeting(meeting:MeetingModel):Promise<MeetingModel>{
+    const sql = `
+        INSERT INTO meetings VALUES(
+            DEFAULT,
+            '${meeting.devGroupId}',
+            '${meeting.meetingStart}',
+            '${meeting.meetingEnd}',
+            '${meeting.description}',
+            '${meeting.meetingRoom}'
+        )
+    `
+            const info:OkPacket=await dal.execute(sql)
+            meeting.meetingId = info.insertId
+    return meeting
+ }
+
 
 export default {
     getAllDeveloperGroup,
-    getMeetingsByDeveloperGroup
+    getMeetingsByDeveloperGroup,
+    addMeeting
 }

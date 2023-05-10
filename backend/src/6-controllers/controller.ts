@@ -25,6 +25,19 @@ router.get("/meetings-per-developergroup/:devGroupId", async (request: Request, 
         next(err);
     }
 });
+router.post("/meeting", async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const meeting= new MeetingModel(request.body)
+        const addedMeeting=await logic.addMeeting(meeting)
+        response.status(201).json(addedMeeting)
+        
+    }
+    catch (err: any) {
+        next(err);
+    }
+});
+
+
 
 
 
